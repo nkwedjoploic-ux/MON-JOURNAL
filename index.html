@@ -1,28 +1,171 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Journal Personnel</title>
-  <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Bienvenue sur Mon Journal</h1>
-
-    <h2>Créer un compte</h2>
-    <input type="text" id="nom" placeholder="Nom">
-    <input type="text" id="prenom" placeholder="Prénom">
-    <input type="password" id="password" placeholder="Mot de passe">
-    <button type="button" onclick="inscription()">S'inscrire</button>
-
-    <hr>
-
-    <h2>Se connecter</h2>
-    <input type="password" id="loginPassword" placeholder="Mot de passe">
-    <button type="button" onclick="connexion()">Se connecter</button>
-  </div>
-
-  <script src="script.js"></script>
+    <header class="px-4 bg-dark text-white d-flex align-items-baseline">
+        <img src="logo.png" alt="" class="logo me-3 ">
+        <h1>Wanderlust</h1>
+    </header>
+    <div class="container-fluid hero d-flex align-items-center ">
+        <div class="container card p-3 border-0 text-center col-8 col-md-6 col-lg-4 description text-white">
+            <h3>Decouvrez le monde avec nous </h3>
+            <p>Explorez des destinations incroyables et vivez des aventiures inoubliables</p>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2>Qu'est ce wunderlust?</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row g-1">
+                    <p>le terme wanderlust est d'origine allemand et se compose de mot : "wander" qui signifie "randonner" ou "voyager" et lust qui signifie "envie" ou "desir" .En francais wanderlust peut signier "envie de voyager" ou "desir de decouvrir le monde "
+                    </p>
+                    <h3>Philosophie de wanderlust</h3>
+                    <div class="container col-md-5 alert alert-info text-center" data-bs-toggle="tooltip" title="le wanderlust incarne le desir de decouvrir de nouveaux lieux culture et experience . c'est une soif aventure qui pousse les individus a explorer le monde au dela de leur zone de confort">Decouverte et aventure</div>
+                     <div class="container col-md-5 alert alert-primary text-center" data-bs-toggle="tooltip" title="le wanderlust incarne le desir de decouvrir de nouveaux lieux culture et experience . c'est une soif aventure qui pousse les individus a explorer le monde au dela de leur zone de confort">Liberte et evasion</div>
+                      <div class="container col-md-5 alert alert-success text-center" data-bs-toggle="tooltip" title="le wanderlust incarne le desir de decouvrir de nouveaux lieux culture et experience . c'est une soif aventure qui pousse les individus a explorer le monde au dela de leur zone de confort">Croissance personnelle</div>
+                       <div class="container col-md-5 alert alert-danger text-center" data-bs-toggle="tooltip" title="le wanderlust incarne le desir de decouvrir de nouveaux lieux culture et experience . c'est une soif aventure qui pousse les individus a explorer le monde au dela de leur zone de confort">Connexion avec la nature</div>
+                        <div class="container col-md-5 alert alert-warning text-center" data-bs-toggle="tooltip" title="le wanderlust incarne le desir de decouvrir de nouveaux lieux culture et experience . c'est une soif aventure qui pousse les individus a explorer le monde au dela de leur zone de confort">Rencontres et echanges</div>
+                        <p>Le wanderlust est donc bien plus qu'un simple desir de voyager ; c'est une philosophie de vie qui valorise l'exploration la decouverte et l'ouverture de l'esprit </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="sidney.jpg" alt="" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+    <div class="container donwload-section d-flex justify-content-center align-items-center">
+        <a href="contains.pdf" download class="btn btn-success">Telecharger le guide</a>
+    </div>
+    <div class="container my-5">
+        <h2>Destinations</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col d-flex">
+                <div class="card flex-fill">
+                    <img src="paris.jpg" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-tittle">Paris<span class="badge bg-warning ms-3">Populaire</span></h5>
+                        <p class="card-text flex-grow-1">Paris la ville lumiere connue pour ses monuments historiques</p>
+                    </div>
+                    <div class="card-footer">
+    <button type="button" class="btn btn-light" data-bs-toggle="popover" title="Paris" data-bs-content="Obtenir plus d'info">Plus d'info</button>
+</div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card flex-fill">
+                    <img src="plane.jpg" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-tittle">Bali<span class="badge bg-success ms-3">Aventure</span></h5>
+                        <p class="card-text flex-grow-1">Des plages paradisiaques et une culture riches</p>
+                    </div>
+                    <div class="card-footer">
+    <button type="button" class="btn btn-light" data-bs-toggle="popover" title="Bali" data-bs-content="Obtenir plus d'info">Plus d'info</button>
+</div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card flex-fill">
+                    <img src="rio.jpg" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-tittle">Rio de jannero<span class="badge bg-warning ms-3">Populaire</span></h5>
+                        <p class="card-text flex-grow-1">Une ville avec une diversité incroyable</p>
+                    </div>
+                    <div class="card-footer">
+    <button type="button" class="btn btn-light" data-bs-toggle="popover" title="Rio de jannero" data-bs-content="Obtenir plus d'info">Plus d'info</button>
+</div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card flex-fill">
+                    <img src="tokyo.jpg" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-tittle">Tokyo<span class="badge bg-info ms-3">Nouveau</span></h5>
+                        <p class="card-text flex-grow-1">Une metropole moderne avec des traditions anciennes</p>
+                    </div>
+                    <div class="card-footer">
+    <button type="button" class="btn btn-light" data-bs-toggle="popover" title="Tokyo" data-bs-content="Obtenir plus d'info">Plus d'info</button>
+</div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card flex-fill">
+                    <img src="paris.jpg" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-tittle">Paris<span class="badge bg-warning ms-3">Populaire</span></h5>
+                        <p class="card-text flex-grow-1">Paris la ville lumiere connue pour ses monuments historiques</p>
+                    </div>
+                    <div class="card-footer">
+    <button type="button" class="btn btn-light" data-bs-toggle="popover" title="Paris" data-bs-content="Obtenir plus d'info">Plus d'info</button>
+</div>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <div class="card flex-fill">
+                    <img src="sidney.jpg" alt="" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-tittle">Sydney<span class="badge bg-danger ms-3">Coup de coeur</span></h5>
+                        <p class="card-text flex-grow-1">Explorer l'operat de sydnet ainsi que ses plages magnifiques</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-light" data-bs-toggle="popover" title="Sidney" data-bs-content="Obtenir plus d'info">Plus d'info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Alertes bon plan</h2>
+        <div class="alert alert-success">
+            Profiter de nos promotions speciales sur les voyages a bali !
+        </div>
+        <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+            <div class="d-flex">
+                <div class="toast-body">
+                    Nouvelle destination ajoutée : Tokyo
+                </div>
+                <button type="button" class="btn btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+        <h2>A propos</h2>
+        <p class="col-md-8 offset-md-2 text-center">
+            Nous sommes pationner par des voyages et aventures . Notre objectifs est de vous faire visité le monde et de maniere unique et enrichissante 
+        </p>
+    </div>
+    <div class="container-fluid contact p-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 card border-0 shadow">
+                <form action="" class="mx-3">
+                    <h2>Contact</h2>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nom</label>
+                        <input type="text" name="name" id="name" class="form-control"placeholder="Entrer votre nom">
+                    </div>
+                    <div class="mb-3">
+    <label for="email" class="form-label">Adresse mail</label>
+    <input type="email" name="email" id="email" class="form-control"placeholder="Entrer votre adresse mail">
+</div>
+<div class="mb-3">
+    <label for="message" class="form-label">Message</label>
+    <textarea name="message" id="message" rows="3" class="form-control" placeholder="Entrer votre message"></textarea>
+</div>
+<p class="form-text text-center">Nous n'amons pas les spams donc nous ne vous  enverrons pas de mail promottionnels  quotidiennements</p>
+<button type="submit" class="btn btn-primary mb-4">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white py-4">
+        <p>&copy; Codabe tous les droits sont reservés</p>
+    </footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

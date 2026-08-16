@@ -1,0 +1,52 @@
+.logo{
+    height: 54px;
+    width: 54px;
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.hero{
+    background-image: url(assets/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+.description{
+    background-color: rgba(125, 125, 125, 0.8);
+    box-shadow: 0rem 0.2rem 0.5rem rgb(25,25,25);
+}
+.description:hover{
+    scale: 1.1;
+}
+h2{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #4caf50;
+}
+.donwload-section{
+    background-image: url(assets/guide.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 33vh;
+}
+.contact{
+    background-image: url(assets/plane.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10vh 0px;
+}
+.card{
+    background-color: rgba(225, 225, 225, 0.5);
+}
+.card:hover{
+    scale: 1.1;
+}
