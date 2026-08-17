@@ -12,7 +12,7 @@
     }
 }
 .hero{
-    background-image: url(assets/hero.jpg);
+    background-image: url(hero.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,14 +31,14 @@ h2{
     color: #4caf50;
 }
 .donwload-section{
-    background-image: url(assets/guide.jpg);
+    background-image: url(guide.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 33vh;
 }
 .contact{
-    background-image: url(assets/plane.jpg);
+    background-image: url(plane.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
